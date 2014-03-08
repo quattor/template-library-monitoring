@@ -1,0 +1,44 @@
+ 
+template monitoring/lemon/server/software_sl4_i386;
+"/software/packages"=pkg_repl("edg-fabricMonitoring-server","2.13.0-3","i386");
+"/software/packages"=pkg_repl("rrdtool","1.0.49-2.1.el3.rf","i386");
+"/software/packages"=pkg_repl("lrf","1.0.7-15","i386");
+#"/software/packages"=pkg_repl("ncm-fmonagent","1.0.32-1","noarch");
+"/software/packages"=pkg_repl("perl-TimeDate","2.22-1","noarch");
+"/software/packages"=pkg_repl("httpd","2.0.52-22.ent","i386");
+"/software/packages"=pkg_repl("httpd-suexec","2.0.52-22.ent","i386");
+"/software/packages"=pkg_repl("system-config-httpd","1.3.1-1","noarch");
+"/software/packages"=pkg_repl("php-ldap","4.3.9-3.15","i386");
+"/software/packages"=pkg_repl("php-gd","4.3.9-3.15","i386");
+"/software/packages"=pkg_repl("php-imap","4.3.9-3.15","i386");
+"/software/packages"=pkg_repl("php-pear","4.3.9-3.15","i386");
+"/software/packages"=pkg_repl("php","4.3.9-3.15","i386");
+"/software/packages"=pkg_repl("oracle-xe-univ","10.2.0.1-1.0","i386");
+"/software/packages"=pkg_repl("cx_Oracle","4.1-1","i386");
+"/software/packages"=pkg_repl("lemon-ora-admin","1.0.4-96","noarch");
+####################
+#rajouter par CL le 23/03/2007
+"/software/packages"=pkg_repl("ncm-oramonserver","1.0.10-1","noarch");
+#####################
+# lemon-OraMon probleme de dependance: l'installer avec --nodeps (info from Miroslav Sicket CERN)
+"/software/packages"=pkg_repl("lemon-OraMon","1.2.0-1","i386");
+"/software/packages"=pkg_repl("xorg-x11-xdm","6.8.2-1.EL.13.25.1","i386");
+"/software/packages"=pkg_repl("libc-client","2002e-14","i386");
+"/software/packages"=pkg_repl("php-oci8","4.3.9-3.15","i386");
+"/software/packages"=pkg_repl("oracle-instantclient-basic","10.2.0.3-1","i386");
+####################
+# Required by LCG 2.7 to run on SL 4.3
+"/software/packages" = pkg_repl("libaio", "0.3.105-2", PKG_ARCH_DEFAULT);
+"/software/packages" = pkg_repl("libaio-devel", "0.3.105-2", PKG_ARCH_DEFAULT);
+"/software/packages" = pkg_repl("j2sdk", "1.4.2_10-fcs", "i586");
+"/software/packages" = pkg_repl("words", "3.0-3", "noarch");
+"/software/packages" = pkg_repl("xorg-x11-xdm", "6.8.2-1.EL.13.25.1", PKG_ARCH_DEFAULT);
+"/software/packages" = pkg_repl("compat-libstdc++", "7.3-2.96.128", "i386");
+"/software/packages" = pkg_repl("compat-libstdc++-33", "3.2.3-47.3", "i386");
+"/software/packages" = pkg_repl("commons-logging", "1.0.2-12", "i386");
+"/software/packages" = pkg_repl("junit", "3.8.1-1", "i386");
+"/software/packages" = pkg_repl("libgcj-ssa", "3.5ssa-0.20030801.48", "i386");
+"/software/packages" = pkg_repl("cog-jar", "1.1-1", "i386");
+"/software/packages" = pkg_repl("redhat-java-rpm-scripts", "1.0.2-2", "noarch");
+"/software/packages" = pkg_del("compat-libstdc++-296","2.96-132.7.2");
+"/software/packages" = pkg_del("tkinter","2.2.3-6.1","i386");

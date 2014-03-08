@@ -1,0 +1,70 @@
+# This template contains a list of all sensors which can
+# be used to populate the oramonserver config.
+# Any new sensors should be added to this file.
+
+
+template monitoring/lemon/sensor/allsensors;
+
+include { 'monitoring/lemon/sensor/adaptec' };
+include { 'monitoring/lemon/sensor/afscm' };
+include { 'monitoring/lemon/sensor/afspartitions' };
+include { 'monitoring/lemon/sensor/afssrv' };
+include { 'monitoring/lemon/sensor/afsvolumes' };
+include { 'monitoring/lemon/sensor/agent' };
+include { 'monitoring/lemon/sensor/areca' };
+include { 'monitoring/lemon/sensor/Castor2Diskserver' };
+include { 'monitoring/lemon/sensor/castor2_performance' };
+include { 'monitoring/lemon/sensor/castor2' };
+include { 'monitoring/lemon/sensor/castor' };
+include { 'monitoring/lemon/sensor/cciss' };
+include { 'monitoring/lemon/sensor/cdr' };
+include { 'monitoring/lemon/sensor/cmdaemon' };
+include { 'monitoring/lemon/sensor/console' };
+include { 'monitoring/lemon/sensor/cvsservice' };
+include { 'monitoring/lemon/sensor/dip' };
+include { 'monitoring/lemon/sensor/diskarray' };
+include { 'monitoring/lemon/sensor/error_trending' };
+include { 'monitoring/lemon/sensor/exception' };
+include { 'monitoring/lemon/sensor/file' };
+include { 'monitoring/lemon/sensor/fio' };
+include { 'monitoring/lemon/sensor/fmonagent' };
+include { 'monitoring/lemon/sensor/fsprobe' };
+include { 'monitoring/lemon/sensor/gridbdii' };
+include { 'monitoring/lemon/sensor/gridgris' };
+include { 'monitoring/lemon/sensor/gridlfc' };
+include { 'monitoring/lemon/sensor/gridpx' };
+include { 'monitoring/lemon/sensor/gridvoms' };
+include { 'monitoring/lemon/sensor/group_example' };
+include { 'monitoring/lemon/sensor/group_wn' };
+include { 'monitoring/lemon/sensor/heartbeat_diskarray' };
+include { 'monitoring/lemon/sensor/hwprobe' };
+include { 'monitoring/lemon/sensor/hwscan' };
+include { 'monitoring/lemon/sensor/ipmi' };
+include { 'monitoring/lemon/sensor/ipsrvmon' };
+include { 'monitoring/lemon/sensor/jvm' };
+include { 'monitoring/lemon/sensor/linuxha' };
+include { 'monitoring/lemon/sensor/linux' };
+include { 'monitoring/lemon/sensor/lsfstatus' };
+include { 'monitoring/lemon/sensor/lsf' };
+include { 'monitoring/lemon/sensor/lumber' };
+include { 'monitoring/lemon/sensor/lxstat' };
+include { 'monitoring/lemon/sensor/maui' };
+include { 'monitoring/lemon/sensor/md' };
+include { 'monitoring/lemon/sensor/mpt' };
+include { 'monitoring/lemon/sensor/netstat' };
+include { 'monitoring/lemon/sensor/newsure' };
+include { 'monitoring/lemon/sensor/nfsstatus' };
+include { 'monitoring/lemon/sensor/oracle' };
+include { 'monitoring/lemon/sensor/parselog' };
+include { 'monitoring/lemon/sensor/plcQuery' };
+include { 'monitoring/lemon/sensor/qla' };
+include { 'monitoring/lemon/sensor/remote' };
+include { 'monitoring/lemon/sensor/smart' };
+include { 'monitoring/lemon/sensor/snmp_get' };
+include { 'monitoring/lemon/sensor/snmptrap' };
+include { 'monitoring/lemon/sensor/suregateway' };
+include { 'monitoring/lemon/sensor/tapedrive' };
+include { 'monitoring/lemon/sensor/tapequeue' };
+include { 'monitoring/lemon/sensor/tape' };
+include { 'monitoring/lemon/sensor/tw' };
+include { 'monitoring/lemon/sensor/vm' };
