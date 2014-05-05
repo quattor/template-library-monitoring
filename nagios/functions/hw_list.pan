@@ -33,7 +33,7 @@ function generate_hw_structure = {
     cpus = nlist();
 
     foreach (h; st; hw) {
-	i = cores_in_hardware (st["hardware_structure"]);
+	i = get_num_of_cores(st["hardware_structure"]);
 	key = "_" + to_string (i);
 	debug ("Hardware type: " + h);
 	if (exists (cpus[key]) && is_defined (cpus[key])) {
