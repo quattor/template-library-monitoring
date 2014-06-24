@@ -21,10 +21,12 @@
 
 unique template monitoring/ganglia/service/frontend;
 
+variable RPMS_CONFIG_SUFFIX ?= '';
+
 include { 'monitoring/ganglia/service/gmond' };
 include { 'monitoring/ganglia/service/gmetad' };
 
-include { 'monitoring/ganglia/rpms/frontend' };
+include { 'monitoring/ganglia/rpms/frontend' + RPMS_CONFIG_SUFFIX };
 
 include { 'components/chkconfig/config' };
 "/software/components/chkconfig/service/httpd/on" = "";
