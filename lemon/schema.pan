@@ -131,3 +131,5 @@ type structure_monitoring = {
     "sensor" : structure_fmonsensor{} # "sensors and metric classes"
     "group" ? structure_fmongroup{} # "sensor and metric class grouping"
 };
+
+bind '/system/monitoring' = structure_monitoring;
